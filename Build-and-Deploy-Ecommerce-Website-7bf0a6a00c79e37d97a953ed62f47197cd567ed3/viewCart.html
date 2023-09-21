@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        .cart-item {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .item-name, .item-price {
+            font-weight: bold;
+        }
+
+        .total-price {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>View Cart</h2>
+        <div class="cart-item">
+            <span class="item-name">Cartoon Astronaut T-Shirts</span>
+            <span class="item-price">$118.10</span>
+        </div>
+        <div class="cart-item">
+            <span class="item-name">New Hippy fi Modern T-Shirts</span>
+            <span class="item-price">$217.20</span>
+        </div>
+        <div class="cart-item">
+            <span class="item-name">New T-Shirt </span>
+            <span class="item-price">$25.00</span>
+        </div>
+        <div class="total-price">
+            Total: $360.30
+        </div>
+        <button>Checkout</button>
+    </div>
+</body>
+</html>
